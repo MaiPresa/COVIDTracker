@@ -1,0 +1,27 @@
+
+.newsImg {
+    width: 15%;
+}
+.newsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsTextInfo {
+    display: flex;
+    justify-content: start;
+    gap:3px;
+    color:white;
+    font-size: 7px;
+
+}
+
+.newsTextInfoIcon {
+    width : 5px;
+}
+h5 {
+    color: white;
+    font-weight: bold;
+}
+
