@@ -1,0 +1,14 @@
+.logosContainer {
+    display: flex;
+    justify-content: space-around;
+    width:85%;
+    margin: 0 8%;
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.logoItem {
+    width: 8%;
+}
