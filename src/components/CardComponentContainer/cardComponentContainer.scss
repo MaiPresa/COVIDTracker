@@ -1,0 +1,32 @@
+@mixin icons {
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.bars-icon{
+    @include icons;
+    background-color: #fa4c9a;
+}
+
+.box-icon{
+    @include icons;
+    background-color: #ecbe22;
+}
+
+.padlock-icon{
+    @include icons;
+    background-color: #39c0e7;
+}
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+}
