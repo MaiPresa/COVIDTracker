@@ -1,6 +1,7 @@
 .logosContainer {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width:85%;
     margin: 0 8%;
     padding: 10px 5px;
@@ -10,5 +11,7 @@
 }
 
 .logoItem {
-    width: 8%;
+    
+    min-width: 100px;
+    width:8%;
 }
