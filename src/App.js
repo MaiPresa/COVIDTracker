@@ -1,9 +1,9 @@
-import './App.css';
+import FixedButtonsComponent from './components/fixedButtonsComponent/FixedButtonsComponent';
 
 function App() {
   return (
     <div className="App">
-
+        <FixedButtonsComponent/>
     </div>
   );
 }
