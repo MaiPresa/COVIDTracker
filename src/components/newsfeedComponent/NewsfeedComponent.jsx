@@ -1,31 +1,29 @@
 
-import "./newsfeedComponent.css";
+import "./newsfeedComponent.scss";
 import commentImg from "../../assets/images/img-comment.png"
 import clockImg from "../../assets/images/img-clock.png"
 
 const NewsfeedComponent = (props) => {
     return (
       <div className="newsfeedContainer">
-       
         <img src={props.newsImage} className="newsImg" alt="" />
-        
         <div className="newsText">
           <div className="newsTextInfo">
-            <span>
+            <span className="newsTextInfoIconText">
               <img src={commentImg} alt="" className="newsTextInfoIcon" />
               {props.date}
             </span>
-            <span>
+            <span className="newsTextInfoIconText">
               <img src={clockImg} alt="" className="newsTextInfoIcon" />
               {props.comments}
             </span>
           </div>
 
-          <h5>{props.newsTitle}</h5>
+          <p className="newsfeedTitle">{props.newsTitle}</p>
         </div>
-
-        <a href={props.link}>Continue</a>
-        
+        <a className="newsfeedLink" href={props.link}>
+          Continue
+        </a>
       </div>
     );
 };
