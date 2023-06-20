@@ -17,3 +17,11 @@
     color: $color !important;
     height: 48px !important;
 }
+
+// --------- Fixed buttons -------
+
+@mixin flexCenter(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
