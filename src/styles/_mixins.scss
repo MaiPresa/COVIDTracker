@@ -1,0 +1,19 @@
+@use "./variables" as var;
+
+// ---------- BUTTONS ----------
+
+@mixin roundBtn($bgColor) {
+    color: white !important;
+    padding: 0 6ch !important;
+    border-radius: 24px !important;
+    background-color: $bgColor !important;
+    height: 48px !important;
+}
+
+@mixin squareBtn($bgColor, $color) {
+    border-radius: 4px !important;
+    padding: 0 4ch !important;
+    background-color: $bgColor !important;
+    color: $color !important;
+    height: 48px !important;
+}
