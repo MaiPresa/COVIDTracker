@@ -1,8 +1,13 @@
-import FixedButtonsComponent from './components/fixedButtonsComponent/FixedButtonsComponent';
+import './App.css';
+
 
 function App() {
+
+
+
   return (
     <div className="App">
+
     </div>
   );
 }
