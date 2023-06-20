@@ -9,7 +9,7 @@
     flex-direction: column;
     gap: 8px;
     position: fixed;
-    top: 70%;
+    top: 60vh;
     left: 10px
 }
 
@@ -49,3 +49,8 @@
     background-color: #b3cf93;
 }
 
+@media (max-height: 595px) and (orientation: landscape) {
+    .fixedButtonsBox {
+        top: 25vh;
+    }
+}

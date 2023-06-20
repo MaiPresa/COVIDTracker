@@ -3,7 +3,6 @@ import FixedButtonsComponent from './components/fixedButtonsComponent/FixedButto
 function App() {
   return (
     <div className="App">
-        <FixedButtonsComponent/>
     </div>
   );
 }
