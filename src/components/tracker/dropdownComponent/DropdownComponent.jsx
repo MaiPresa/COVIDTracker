@@ -24,7 +24,7 @@ export function DropdownComponent(){
                 const countryList = res.data;
 
                 countryList.forEach(element => {
-                    if(element.country == country){
+                    if(element.country === country){
                         console.log(element)
                         cases.innerHTML = element.cases
                     }
