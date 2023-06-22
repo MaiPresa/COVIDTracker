@@ -1,0 +1,21 @@
+@use "../../../styles/variables.scss" as v;
+
+.landingMenuText {
+    color: v.$primaryBtn;
+    list-style: none;
+    height: 48px;
+    padding: 0 2ch;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+
+    img {
+        width: 8px;
+        margin-top: 4px;
+        filter: invert(15%) sepia(59%) saturate(4424%) hue-rotate(238deg) brightness(91%) contrast(88%);
+        -ms-filter: invert(15%) sepia(59%) saturate(4424%) hue-rotate(238deg) brightness(91%) contrast(88%);
+    }
+}
