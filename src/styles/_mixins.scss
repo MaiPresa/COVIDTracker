@@ -4,24 +4,27 @@
 
 @mixin roundBtn($bgColor) {
     color: white !important;
-    padding: 0 6ch !important;
     border-radius: 24px !important;
     background-color: $bgColor !important;
-    height: 48px !important;
+    height: 40px !important;
+    padding: 0 4ch !important;
 }
 
 @mixin squareBtn($bgColor, $color) {
     border-radius: 4px !important;
-    padding: 0 4ch !important;
     background-color: $bgColor !important;
     color: $color !important;
-    height: 48px !important;
+    height: 40px !important;
+    padding: 0 4ch !important;
 }
 
-// --------- Fixed buttons -------
+// --------- FLEX -------
 
-@mixin flexCenter(){
+@mixin flex($align:center, $justify:center, $wrap:nowrap, $direction: row, $gap:0){
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    gap: $gap;
 }
