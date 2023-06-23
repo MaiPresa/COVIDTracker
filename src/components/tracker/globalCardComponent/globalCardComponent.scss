@@ -1,0 +1,32 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+
+.globalCard{
+    width: 300px;
+    height: 100px;
+    margin: 2px;
+    color: $mainBg;
+    box-shadow: 0 0 2px grey
+}
+.globalIcon{
+    @include flex();
+    width:100px;
+    height: 100px;
+    position: absolute;
+}
+.covidIcon{
+    width: 50px;
+}
+.globalData{
+    @include flex($direction:column);
+}
+.globalDataTitle{
+    margin-top: 28px;
+    margin-bottom: -20px;
+}
+
+.globalIdData{
+    font-size: 25px;
+    font-weight: 700;
+}
