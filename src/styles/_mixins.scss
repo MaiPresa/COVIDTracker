@@ -25,3 +25,11 @@
     align-items: center;
     justify-content: center;
 }
+
+//----------Tracker------------
+
+@mixin countryCardData(){
+    font-size: 25px;
+    font-weight: bold;
+    margin:8px;
+}

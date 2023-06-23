@@ -1,21 +1,84 @@
-.countryCardsContainer {
-    width:400px;
-    z-index:2;
-    background-color: aqua;
+@import '../../../styles/mixins';
 
+.cardAtom {
+    width: 250px;
+    height: 100px;
+    position:relative;
+    overflow: hidden;
+    border-radius:5px;
+    background-color: white;
+    
 }
+
 .imgStyle {
-    width: 200px;
-    position: absolute;
-    z-index:-2;
-    margin-top:-130px;
-    margin-left:130px;
-}
-
-.countryAtom {
     width: 150px;
-}
-.countryAtom .countryCardTitle {
-    font-size: 120px;
+    height:150px;
+    position: absolute;
+    margin-top:-80px;
+    margin-left:140px;
+    opacity:0.1;
+    transition: ease-in-out 0.2s;
 }
 
+.imgStyle:hover {
+    animation: imgStyle 2s infinite linear;
+	}
+
+@keyframes imgStyle {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.cardBar {
+    color:#494949;
+}
+
+.countryCardTitle {
+    font-size: 16px;
+    font-weight:600;
+    color:#494949;
+    margin:10px 8px;
+}
+.countryTotalCases {
+    @include countryCardData();
+    color:#4844af;  
+}
+.countryDeaths {
+    @include countryCardData();
+    color:#FF0807;  
+}
+.countryRecovered {
+    @include countryCardData();
+    color:#a6cd38;  
+}
+.countryActive {
+    @include countryCardData();
+    color:#2F71FF;  
+}
+.countryNewCases {
+    @include countryCardData();
+    color:#FF760D;  
+}
+.countryNewDeaths {
+    @include countryCardData();
+    color:#B70202;  
+}
+
+.countryCardsContainer {
+    width:100%;
+    height: auto;
+    background-color: #F7F8FC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+
+}
