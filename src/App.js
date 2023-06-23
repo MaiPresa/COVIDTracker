@@ -1,15 +1,10 @@
-import './App.css';
-import Footer from '../src/components/landingPage/footer/Footer'
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-     <Footer />
     </div>
-  )
+  );
 }
 
 export default App;
-
-
-

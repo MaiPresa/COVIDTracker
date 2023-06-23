@@ -1,0 +1,74 @@
+@import '../../styles/mixins';
+
+.newsfeedSectionContainer {
+    @include flex ($direction:column, $gap:30px);
+    width:70%;
+    margin:auto;
+}
+
+.newsfeedContainer {
+    @include flex ($wrap:wrap, $gap:10px);
+    width: 100%;
+    height:auto;
+}
+.newsImg {
+    width: auto;
+    height: 100px;
+}
+.newsText {
+    @include flex($direction:column, $align:flex-start);
+    height:100%;    
+    width: 65%;
+}
+.newsTextInfo {
+    @include flex($align:flex-start,$gap:10px);   
+    color:white;
+    font-size: 0.7rem;
+}
+
+.newsTextInfoIcon {
+    width : 15px;
+}
+
+.newsTextInfoIconText {
+    @include flex($wrap:wrap, $gap:2px);
+    color:white;    
+}
+.newsfeedTitle {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom:0;
+}
+
+.newsfeedLink {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size:0.7rem ;
+    align-self: flex-start;
+}
+
+@media only screen and (max-width: 570px) {
+
+    .newsTextInfo {
+    @include flex($align:center);   
+    }
+
+    .newsText {
+    @include flex($direction:column, $align:center);
+    }
+
+    .newsfeedContainer {
+    @include flex ($direction:column,$wrap:wrap, $gap:10px);
+    
+    }
+    .newsfeedLink {
+    align-self: center;
+    }
+    .newsfeedTitle {
+    
+    font-size: 1.1rem;
+    
+}
+}
