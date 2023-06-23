@@ -1,31 +1,35 @@
+import NewsfeedAtom from './NewsfeedAtom'
+import './newsfeedComponent.scss'
+import blog1 from "../../assets/images/blog-1.jpg";
+import blog2 from "../../assets/images/blog-2.jpg";
+import blog3 from "../../assets/images/blog-3.jpg";
 
-import "./newsfeedComponent.scss";
-import commentImg from "../../assets/images/img-comment.png"
-import clockImg from "../../assets/images/img-clock.png"
-
-const NewsfeedComponent = (props) => {
+const NewsfeedComponent = () => {
     return (
-      <div className="newsfeedContainer">
-        <img src={props.newsImage} className="newsImg" alt="" />
-        <div className="newsText">
-          <div className="newsTextInfo">
-            <span className="newsTextInfoIconText">
-              <img src={commentImg} alt="" className="newsTextInfoIcon" />
-              {props.date}
-            </span>
-            <span className="newsTextInfoIconText">
-              <img src={clockImg} alt="" className="newsTextInfoIcon" />
-              {props.comments}
-            </span>
-          </div>
+      <div className="newsfeedSectionContainer">
+        
+        <NewsfeedAtom
+          newsImage={blog1}
+          date={"9 Sept 2020"}
+          comments={"21 Comments"}
+          newsTitle={"Con COVID-19 be caught from a person who has no symptoms?"}
+        />
+        <NewsfeedAtom
+          newsImage={blog2}
+          date={"9 Sept 2020"}
+          comments={"21 Comments"}
+          newsTitle={"What you need to know about novel Corona virus Covid 19"}
+        />
 
-          <p className="newsfeedTitle">{props.newsTitle}</p>
-        </div>
-        <a className="newsfeedLink" href={props.link}>
-          Continue
-        </a>
+        <NewsfeedAtom
+          newsImage={blog3}
+          date={"9 Sept 2020"}
+          comments={"21 Comments"}
+          newsTitle={"What can I do to protect myself and prevent the spread of disease?"}
+        />
       </div>
     );
 };
 
 export default NewsfeedComponent
+

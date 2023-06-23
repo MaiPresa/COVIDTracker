@@ -1,10 +1,15 @@
+@import '../../styles/mixins';
+
+.newsfeedSectionContainer {
+    @include flex ($direction:column, $gap:30px);
+    background-color: #171133;
+    width:70%;
+    margin:auto;
+}
+
 .newsfeedContainer {
+    @include flex ($wrap:wrap, $gap:10px);
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
     height:auto;
     
 }
@@ -13,22 +18,15 @@
     height: 100px;
 }
 .newsText {
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    
-    width: 65%
+    @include flex($direction:column, $align:flex-start);
+    height:100%;    
+    width: 65%;
 }
 
 .newsTextInfo {
-    
-    display: flex;
-    justify-content: start;
-    justify-self: flex-start;
-    gap:10px;
+    @include flex($align:flex-start,$gap:10px);   
     color:white;
-    font-size: 10px;
-
+    font-size: 0.7rem;
 }
 
 .newsTextInfoIcon {
@@ -36,11 +34,7 @@
 }
 
 .newsTextInfoIconText {
-    display: flex;
-    justify-items: center;
-    flex-wrap: wrap;
-    gap:2px;
-    
+    @include flex($wrap:wrap, $gap:2px);    
 }
 .newsfeedTitle {
     color: white;
@@ -53,7 +47,30 @@
     color: white;
     text-decoration: underline;
     font-weight: bold;
-    font-size:10px ;
+    font-size:0.7rem ;
     align-self: flex-start;
 }
 
+@media only screen and (max-width: 570px) {
+
+    .newsTextInfo {
+    @include flex($align:center);   
+    }
+
+    .newsText {
+    @include flex($direction:column, $align:center);
+    }
+
+    .newsfeedContainer {
+    @include flex ($direction:column,$wrap:wrap, $gap:10px);
+    
+    }
+    .newsfeedLink {
+    align-self: center;
+    }
+    .newsfeedTitle {
+    
+    font-size: 1.1rem;
+    
+}
+}

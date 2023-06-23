@@ -1,0 +1,30 @@
+@use "./variables" as var;
+
+// ---------- BUTTONS ----------
+
+@mixin roundBtn($bgColor) {
+    color: white !important;
+    border-radius: 24px !important;
+    background-color: $bgColor !important;
+    height: 40px !important;
+    padding: 0 4ch !important;
+}
+
+@mixin squareBtn($bgColor, $color) {
+    border-radius: 4px !important;
+    background-color: $bgColor !important;
+    color: $color !important;
+    height: 40px !important;
+    padding: 0 4ch !important;
+}
+
+// --------- FLEX -------
+
+@mixin flex($align:center, $justify:center, $wrap:nowrap, $direction: row, $gap:0){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    gap: $gap;
+}
