@@ -1,0 +1,25 @@
+@import '../../styles/_variables';
+@import '../../styles/mixins';
+
+#trackerGlobalPage {
+    @include flex($align:center, $justify:start);
+    background-color: #F4F6FA;
+
+    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+        color: black;
+    }
+
+    #global {
+        @include flex($align:flex-start, $justify:flex-start, $wrap:nowrap, $direction: column, $gap:0);
+        
+        hr {
+            border: none;
+            width: 90%;
+            background-color: rgb(223, 223, 223);
+            height: 1px;
+        }
+    
+    }
+
+    
+}

@@ -1,4 +1,3 @@
-
 import axios from 'axios'
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -36,21 +35,22 @@ export function DropdownComponent(){
 
     return (
         <>
-        <Box sx={{ minWidth: 120,margin:10}}>
-        <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">Country</InputLabel>
-            <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={country}
-            label="country"
-            onChange={handleChange}
-            >
-            <MenuItem value={"Spain"}>Spain</MenuItem>
-            <MenuItem value={"USA"}>USA</MenuItem>
-            <MenuItem value={"Argentina"}>Argentina</MenuItem>
-            </Select>
-        </FormControl>
+        <Box className="dropdownSection">
+            <FormControl fullWidth >
+                <InputLabel id="demo-simple-select-label">Country</InputLabel>
+                <Select className='dropdown'
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={country}
+                label="country"
+                onChange={handleChange}
+                >
+                <MenuItem value={"Spain"}>Spain</MenuItem>
+                <MenuItem value={"USA"}>USA</MenuItem>
+                <MenuItem value={"Argentina"}>Argentina</MenuItem>
+                </Select>
+            </FormControl>
+            <p id="lastUpdate">Updated: June 27, 2023</p>
         </Box>
         </>
     );
