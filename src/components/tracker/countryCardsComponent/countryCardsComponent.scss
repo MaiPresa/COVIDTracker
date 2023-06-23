@@ -1,0 +1,21 @@
+.countryCardsContainer {
+    width:400px;
+    z-index:2;
+    background-color: aqua;
+
+}
+.imgStyle {
+    width: 200px;
+    position: absolute;
+    z-index:-2;
+    margin-top:-130px;
+    margin-left:130px;
+}
+
+.countryAtom {
+    width: 150px;
+}
+.countryAtom .countryCardTitle {
+    font-size: 120px;
+}
+
