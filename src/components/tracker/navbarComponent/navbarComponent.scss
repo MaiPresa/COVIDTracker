@@ -1,22 +1,14 @@
 @import "../../../styles/mixins";
 
-@mixin navbarButton(){
-
-}
-
 navbar {
+    @include flex($justify:start,$direction:column,$gap:20px);
     background-color: #f7f8fc;
     min-height: 100vh;
     width: 48px;
-    /*arreglar mixin*/
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
     border-right: 2px solid #e1e2e6;
 
     .logo {
-        margin-top: 10px;
+        margin-top:10px;
         width: 35px;
         padding: 2px;
     }
@@ -34,9 +26,7 @@ navbar {
             cursor: pointer;
             width: 48px;
             height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex()
         }
 
         a:hover {
@@ -124,7 +114,7 @@ navbar {
     }
 
     #infoButtonDiv{
-        margin: 100px 0 20px 0;
+        margin: 50px 0 20px 0;
     }
     .infoButton {
         width: 20px;
@@ -174,7 +164,6 @@ navbar {
 @media screen and (min-width:768px){
     navbar{
         width: 100px;
-
         .logo {
             margin-top: 20px;
             width: 45px;
@@ -192,6 +181,5 @@ navbar {
         #infoButtonDiv{
             margin: 0;
         }
-
     }
 }
