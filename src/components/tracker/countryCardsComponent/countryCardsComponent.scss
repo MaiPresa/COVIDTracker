@@ -38,7 +38,8 @@
 
 
 .cardBar {
-    color:#494949;
+    border: 1px solid  #f1eeee ;
+    
 }
 
 .countryCardTitle {
@@ -73,12 +74,8 @@
 }
 
 .countryCardsContainer {
+    @include flex($wrap:wrap, $gap:10px);
     width:100%;
     height: auto;
-    background-color: #F7F8FC;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:10px;
-
+    
 }

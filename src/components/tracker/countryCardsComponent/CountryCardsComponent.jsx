@@ -1,11 +1,11 @@
-import './countryCardsComponent.scss'
-import CountryCardAtom from './CountryCardAtom';
-import card1Img from '../../../assets/icons/covid-defult.svg'
-import card2Img from "../../../assets/icons/covid-red.svg";
-import card3Img from "../../../assets/icons/covid-green.svg";
-import card4Img from "../../../assets/icons/covid-blue.svg";
-import card5Img from "../../../assets/icons/covid-orange.svg";
-import card6Img from "../../../assets/icons/covid-redark.svg";
+import "./countryCardsComponent.scss";
+import CountryCardAtom from "../../tracker/countryCardsComponent/CountryCardAtom"
+import card1Img from "../../../assets/images/covid-defult.svg";
+import card2Img from "../../../assets/images/covid-red.svg";
+import card3Img from "../../../assets/images/covid-green.svg";
+import card4Img from "../../../assets/images/covid-blue.svg";
+import card5Img from "../../../assets/images/covid-orange.svg";
+import card6Img from "../../../assets/images/covid-redark.svg";
 
 const CountryCardsComponent = () => {
   return (
