@@ -1,16 +1,11 @@
-import './App.css';
-import NewsfeedComponent from './components/newsfeedComponent/NewsfeedComponent';
-
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <NewsfeedComponent />
+    
     </div>
   );
 }
 
 export default App;
-
-
-
