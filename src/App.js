@@ -1,12 +1,12 @@
 import './App.css';
+import { NavbarComponent } from './components/tracker/navbarComponent/NavbarComponent';
 
 
 function App() {
   return (
-    <div className="App">
-
-
-    </div>
+      <div className="App">
+          <NavbarComponent></NavbarComponent>
+      </div>
   );
 }
 

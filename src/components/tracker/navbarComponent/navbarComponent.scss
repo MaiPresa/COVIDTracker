@@ -1,0 +1,197 @@
+@import "../../../styles/mixins";
+
+@mixin navbarButton(){
+
+}
+
+navbar {
+    background-color: #f7f8fc;
+    min-height: 100vh;
+    width: 48px;
+    /*arreglar mixin*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 2px solid #e1e2e6;
+
+    .logo {
+        margin-top: 10px;
+        width: 35px;
+        padding: 2px;
+    }
+
+    .rotating {
+        -webkit-animation: rotating 4s linear infinite;
+        -moz-animation: rotating 4s linear infinite;
+        -ms-animation: rotating 4s linear infinite;
+        -o-animation: rotating 4s linear infinite;
+        animation: rotating 4s linear infinite;
+    }
+
+    #buttonGroupTracker {
+        a {
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a:hover {
+            animation: bgChange 0.3s linear;
+            animation-fill-mode: forwards;
+        }
+
+        a:hover .navbarTrackerButton {
+            animation: bgChange 0.3s linear;
+            animation-fill-mode: forwards;
+        }
+
+        .navbarTrackerButton {
+            width: 25px;
+            height: 25px;
+            border: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .statsButton {
+            background-image: url("../../../assets/icons/data-management.png");
+        }
+
+        a:hover .statsButton {
+            background-image: url("../../../assets/icons/data-management\ \(1\).png");
+        }
+
+        .optButton {
+            background-image: url("../../../assets/icons/menu-bar.png");
+        }
+
+        a:hover .optButton {
+            background-image: url("../../../assets/icons/menu-bar\ \(1\).png");
+        }
+
+        .chartButton {
+            background-image: url("../../../assets/icons/menu.png");
+        }
+
+        a:hover .chartButton {
+            background-image: url("../../../assets/icons/menu\ \(1\).png");
+        }
+
+        .folderButton {
+            background-image: url("../../../assets/icons/folder.png");
+        }
+
+        a:hover .folderButton {
+            background-image: url("../../../assets/icons/folder\ \(1\).png");
+        }
+
+        .stackButton {
+            background-image: url("../../../assets/icons/layers.png");
+        }
+
+        a:hover .stackButton {
+            background-image: url("../../../assets/icons/layers\ \(1\).png");
+        }
+
+        .graphButton {
+            background-image: url("../../../assets/icons/stats.png");
+        }
+
+        a:hover .graphButton {
+            background-image: url("../../../assets/icons/stats\ \(1\).png");
+        }
+
+        .globalButton {
+            background-image: url("../../../assets/icons/world.png");
+        }
+
+        a:hover .globalButton {
+            background-image: url("../../../assets/icons/world\ \(1\).png");
+        }
+
+        .newsButton {
+            background-image: url("../../../assets/icons/chat-box.png");
+        }
+
+        a:hover .newsButton {
+            background-image: url("../../../assets/icons/chat-box\ \(1\).png");
+        }
+    }
+
+    #infoButtonDiv{
+        margin: 100px 0 20px 0;
+    }
+    .infoButton {
+        width: 20px;
+        height: 20px;
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../../../assets/icons/two-dots\ \(1\).png");
+        background-color: #3639ae;
+        border: #3639ae solid 2px;
+        border-radius: 50%;
+    }
+    a:hover .infoButton{
+        background-image: url("../../../assets/icons/two-dots.png");
+        background-color: #f7f8fc;
+    }
+}
+
+@keyframes bgChange {
+    from {
+        background-color: #f7f8fc;
+    }
+
+    to {
+        background-color: #3639ae;
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width:768px){
+    navbar{
+        width: 100px;
+
+        .logo {
+            margin-top: 20px;
+            width: 45px;
+        }
+        #buttonGroupTracker{
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            a{
+                border-radius: 5px;
+            }
+        }
+        #infoButtonDiv{
+            margin: 0;
+        }
+
+    }
+}
