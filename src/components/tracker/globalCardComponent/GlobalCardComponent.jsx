@@ -9,7 +9,7 @@ function GlobalCardComponent(props) {
         </div>
       <div className="globalData">
         <p className='globalDataTitle'>{props.globalTitle}</p>
-        <p id={props.globalId} className='globalIdData'>435435345</p>
+        <p id={props.globalId} className='globalIdData'>{props.info}</p>
       </div>
       </div>
     </>

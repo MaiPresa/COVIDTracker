@@ -1,6 +1,5 @@
 @import '../../../styles/mixins';
 
 .globalCardContainer{
-    @include flex($wrap:wrap);
-   
+    @include flex($wrap:wrap);   
 }

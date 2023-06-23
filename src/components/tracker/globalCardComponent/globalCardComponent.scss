@@ -1,10 +1,13 @@
 @import '../../../styles/mixins';
+@import '../../../styles/variables';
 
 
 .globalCard{
-    width: 320px;
+    width: 300px;
     height: 100px;
     margin: 2px;
+    color: $mainBg;
+    box-shadow: 0 0 2px grey
 }
 .globalIcon{
     @include flex();
@@ -17,7 +20,6 @@
 }
 .globalData{
     @include flex($direction:column);
-    width: 350px;
 }
 .globalDataTitle{
     margin-top: 28px;
