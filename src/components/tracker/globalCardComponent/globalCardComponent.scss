@@ -3,30 +3,40 @@
 
 
 .globalCard{
-    width: 300px;
-    height: 100px;
+    width: 45%;
+    height: 70px;
     margin: 2px;
     color: $mainBg;
-    box-shadow: 0 0 2px grey
-}
-.globalIcon{
-    @include flex();
-    width:100px;
-    height: 100px;
-    position: absolute;
-}
-.covidIcon{
-    width: 50px;
-}
-.globalData{
-    @include flex($direction:column);
-}
-.globalDataTitle{
-    margin-top: 28px;
-    margin-bottom: -20px;
+    box-shadow: 0 0 2px grey;
+
+    .globalIcon{
+        @include flex();
+        width:10%;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 10px;
+
+        .covidIcon{
+            width: 45px;
+        }
+    }
+
+    .globalData{
+        @include flex($direction:column);
+
+        .globalDataTitle{
+            margin: 18px 0 -20px 40px ;
+            margin-top: 20px;
+            margin-bottom: -20px;
+            font-size: 11px;
+        }
+
+        .globalIdData{
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+
+    }
 }
 
-.globalIdData{
-    font-size: 25px;
-    font-weight: 700;
-}

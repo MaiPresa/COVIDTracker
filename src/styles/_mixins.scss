@@ -28,3 +28,12 @@
     flex-direction: $direction;
     gap: $gap;
 }
+
+
+//----------Tracker------------
+
+@mixin countryCardData(){
+    font-size: 25px;
+    font-weight: bold;
+    margin:8px;
+}

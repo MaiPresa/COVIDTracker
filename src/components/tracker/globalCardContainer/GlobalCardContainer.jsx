@@ -13,7 +13,7 @@ function GlobalCardContainer() {
       <GlobalCardComponent covidIcon={covidGreen} globalTitle="Total Recovered"/>
       <GlobalCardComponent covidIcon={covidRed} globalTitle="Total Deaths" />
       <GlobalCardComponent covidIcon={covidRedDark} globalTitle="New Deaths" />
-      <GlobalCardComponent covidIcon={telephone} globalTitle="Help Line No." info="198" />
+      <GlobalCardComponent covidIcon={telephone} globalTitle="Help Line No." id='phone' info="198" />
 
     </div>
   );
