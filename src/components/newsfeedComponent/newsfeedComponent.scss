@@ -2,7 +2,6 @@
 
 .newsfeedSectionContainer {
     @include flex ($direction:column, $gap:30px);
-    background-color: #171133;
     width:70%;
     margin:auto;
 }
@@ -11,7 +10,6 @@
     @include flex ($wrap:wrap, $gap:10px);
     width: 100%;
     height:auto;
-    
 }
 .newsImg {
     width: auto;
@@ -22,7 +20,6 @@
     height:100%;    
     width: 65%;
 }
-
 .newsTextInfo {
     @include flex($align:flex-start,$gap:10px);   
     color:white;
@@ -34,7 +31,8 @@
 }
 
 .newsTextInfoIconText {
-    @include flex($wrap:wrap, $gap:2px);    
+    @include flex($wrap:wrap, $gap:2px);
+    color:white;    
 }
 .newsfeedTitle {
     color: white;

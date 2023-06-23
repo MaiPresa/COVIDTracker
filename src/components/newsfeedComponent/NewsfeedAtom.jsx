@@ -1,7 +1,7 @@
 
 import "./newsfeedComponent.scss";
-import commentImg from "../../assets/images/img-comment.png"
-import clockImg from "../../assets/images/img-clock.png"
+import commentImg from "../../assets/icons/img-comment.png"
+import clockImg from "../../assets/icons/img-clock.png"
 
 const NewsfeedAtom = (props) => {
     return (
