@@ -1,7 +1,8 @@
 import "./NavBar.scss";
 import * as React from 'react';
+import { Link } from "react-router-dom";
 
-import logo from "../../../assets/images/logo.png";
+import landingLogo from "../../../assets/images/logo.png";
 import { Btn } from "../../button/Btn";
 import { NavButtons } from "../navBarButtons/NavButtons";
 
@@ -26,7 +27,7 @@ export const NavBar = () => {
     return(
         <nav className="landingNav">
             <div className="landingMenuContainer">
-                <img src={logo} alt="COVIMAP logo" />
+                <img src={landingLogo} alt="COVIMAP logo" />
                 <ul className="landingBtnContainer">
                     
                     <NavButtons>Home <img src={arrowDown} alt="Home dropdown" /> </NavButtons>
@@ -35,7 +36,7 @@ export const NavBar = () => {
                     <NavButtons>Pages <img src={arrowDown} alt="Pages dropdown" /></NavButtons>
                     <NavButtons>About</NavButtons>
                     <NavButtons>Help</NavButtons>
-                    <Btn btnType="btnPrimary">Tracker</Btn>
+                    <Link to="/tracker"><Btn btnType="btnPrimary">Tracker</Btn></Link>
 
                 </ul>
                 <div className="landingMobileContainer">
@@ -60,7 +61,7 @@ export const NavBar = () => {
                         <MenuItem onClick={handleClose}><NavButtons>Pages <img src={arrowDown} alt="Pages dropdown" /></NavButtons></MenuItem>
                         <MenuItem onClick={handleClose}><NavButtons>About</NavButtons></MenuItem>
                         <MenuItem onClick={handleClose}><NavButtons>Help</NavButtons></MenuItem>
-                        <MenuItem onClick={handleClose}><Btn btnType="btnPrimary">Tracker</Btn></MenuItem>
+                        <MenuItem onClick={handleClose}><Link to="/tracker"><Btn btnType="btnPrimary">Tracker</Btn></Link></MenuItem>
                     </Menu>
                 </div>
             </div>

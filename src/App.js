@@ -1,10 +1,10 @@
 import './App.css';
-import {TrackerGlobalPage} from './pages/tracker/TrackerGlobalPage'
+import { Router } from './config/Router';
 
 function App() {
   return (
     <div className="App">
-      <TrackerGlobalPage />
+      <Router/>
     </div>
   );
 }
