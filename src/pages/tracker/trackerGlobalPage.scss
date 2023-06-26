@@ -1,4 +1,3 @@
-@import '../../styles/_variables';
 @import '../../styles/mixins';
 
 #trackerGlobalPage {
@@ -11,8 +10,9 @@
     }
 
     #global {
-        @include flex($align:flex-start, $justify:flex-start, $wrap:nowrap, $direction: column, $gap:0);
+        @include flex($align:flex-start, $justify:flex-start, $wrap:wrap, $direction: column, $gap:0);
         padding-left: 48px;
+        width: 90vw;
         hr {
             border: none;
             width: 90%;
@@ -23,9 +23,31 @@
             width: 92%;
             padding: 4%;
         }
+        
+        @media screen and (min-width:768px){
+            padding-left: 100px;
+            width: 40vw;
+
+
+        }
+        
+        @media screen and (min-width:1024px){
+            width: 70vw;
+            .dropdownSection{
+
+                @include flex($wrap:wrap,$direction:row,$justify:space-between);
+
+                .MuiFormControl-root{
+                    width:30%
+                }
+                #lastUpdate{
+                    width:20%
+                }
+            }
+            
+        }
     }
 
     
 
-    
 }

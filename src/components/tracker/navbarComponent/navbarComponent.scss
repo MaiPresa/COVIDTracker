@@ -1,9 +1,8 @@
-@import '../../../styles/_variables';
 @import "../../../styles/mixins";
 
 nav {
     @include flex($justify:start,$direction:column,$gap:20px);
-    background-color: $trackerBg;
+    background-color: #f7f8fc;
     min-height: 100vh;
     width: 48px;
     border-right: 2px solid #e1e2e6;
