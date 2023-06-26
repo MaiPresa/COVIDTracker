@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 
 .socialButtonsBox {
-    @include flexCenter();
+    @include flex();
     gap: 10px;
 }
 

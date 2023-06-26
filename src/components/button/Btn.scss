@@ -8,8 +8,10 @@
 }
 
 .btnSecondary {
-    box-shadow: inset 0 0 0 3px v.$primaryBtn;
+    border: 2px solid v.$primaryBtn !important;
     @include roundBtn($bgColor: v.$secondaryBtn);
+    height: 48px !important;
+    font-size: 12px;
 }
 
 .btnSquarePrimary {

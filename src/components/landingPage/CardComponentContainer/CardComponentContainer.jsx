@@ -1,7 +1,7 @@
 import CardComponent from "../cardComponent/CardComponent";
-import barsIcon from "../../assets/images/bars-icon.png"
-import boxIcon from "../../assets/images/box-icon.png";
-import padlockIcon from "../../assets/images/pandlock-icon.png";
+import barsIcon from "../../../assets/images/bars-icon.png"
+import boxIcon from "../../../assets/images/box-icon.png";
+import padlockIcon from "../../../assets/images/pandlock-icon.png";
 import "./cardComponentContainer.scss";
 
 function CardComponentContainer() {

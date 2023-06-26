@@ -1,0 +1,39 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as *;
+
+.landingHeader {
+    background-image: linear-gradient(v.$gradientTop, v.$gradientBottom);
+    padding-bottom: 48px;
+}
+
+.logosSection {
+    height: 0;
+    @include flex();
+}
+
+.landingFirstSection {
+    background-color: v.$mainBg;
+    padding-top: 168px;
+
+    > p, > h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    > h2 {
+        font-size: 3em;
+    }
+    .cardContainer {
+        height: auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+}
+
+.landingSecondSection {
+    background-color: v.$mainBg;
+    padding-bottom: 148px;
+}

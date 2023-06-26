@@ -10,7 +10,7 @@ const CountryCardAtom = (props) => {
         src={props.countryCardImage}
         alt="corona virus icon"
       />
-      <p className={props.countryCardDataId}></p>
+      <p className={props.countryCardDataId} id={props.countryCardDataId}></p>
     </div>
   );
 };

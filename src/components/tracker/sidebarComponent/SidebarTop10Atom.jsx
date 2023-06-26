@@ -3,7 +3,7 @@ const SidebarTop10Atom = (props) => {
     return (
       <div className="top10CardContainer">
         <div className = "top10FlagName">
-          <img src={props.top10Flag} className="flagStyle"alt=""></img>
+          <img src={props.top10Flag} className="flagStyle"alt="flag"></img>
           <p className={props.top10CountryId}>USA</p>
         </div>
         <p className={props.top10DataId}>3344564</p>

@@ -16,8 +16,13 @@
     border-color: #e3e1e1;
     box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.1);
     border-radius: 4px;
+    transition:ease-in-out 0.2s;
 
 }
+.top10CardContainer:hover {
+    transform: scale(1.1);
+}
+
 
 .top10FlagName {
     @include flex($gap:10px);
@@ -29,13 +34,13 @@
     border-radius: 3px;
 }
 
-.top10Country1 {
+.top10Country {
     color:#192B65;
     font-size: 12px;
     font-weight: 400;
 }
 
-.top10Data1 {
+.top10Data {
     color: #3C317C;
     font-weight: bold;
     font-size: 14px;
