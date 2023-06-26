@@ -9,12 +9,11 @@ import telephone from '../../../assets/images/telephone.svg'
 function GlobalCardContainer() {
   return (
     <div className="globalCardContainer">
-      <GlobalCardComponent covidIcon={covidBlack} globalTitle="Total Confirmed"/>
-      <GlobalCardComponent covidIcon={covidGreen} globalTitle="Total Recovered"/>
-      <GlobalCardComponent covidIcon={covidRed} globalTitle="Total Deaths" />
-      <GlobalCardComponent covidIcon={covidRedDark} globalTitle="New Deaths" />
-      <GlobalCardComponent covidIcon={telephone} globalTitle="Help Line No." id='phone' info="198" />
-
+      <GlobalCardComponent covidIcon={covidBlack} globalTitle="Total Confirmed" globalId='globalCases' globalCardClass='commonWidth'/>
+      <GlobalCardComponent covidIcon={covidGreen} globalTitle="Total Recovered" globalId='globalRecovered' globalCardClass='commonWidth'/>
+      <GlobalCardComponent covidIcon={covidRed} globalTitle="Total Deaths" globalId='globalDeaths' globalCardClass='commonWidth'/>
+      <GlobalCardComponent covidIcon={covidRedDark} globalTitle="New Deaths" globalId='globalNewDeaths' globalCardClass='commonWidth'/>
+      <GlobalCardComponent covidIcon={telephone} globalTitle="Help Line No." info="198" globalCardClass='fullWidth'/>
     </div>
   );
 }

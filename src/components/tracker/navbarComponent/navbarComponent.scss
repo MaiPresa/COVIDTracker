@@ -1,7 +1,7 @@
 @import '../../../styles/_variables';
 @import "../../../styles/mixins";
 
-navbar {
+nav {
     @include flex($justify:start,$direction:column,$gap:20px);
     background-color: $trackerBg;
     min-height: 100vh;
@@ -165,7 +165,7 @@ navbar {
 }
 
 @media screen and (min-width:768px){
-    navbar{
+    nav{
         width: 100px;
         .logo {
             margin-top: 20px;

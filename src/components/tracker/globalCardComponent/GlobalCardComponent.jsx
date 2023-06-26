@@ -3,7 +3,7 @@ import './globalCardComponent.scss'
 function GlobalCardComponent(props) {
   return (
     <>
-      <div className='globalCard'>
+      <div className={'globalCard '+props.globalCardClass}>
         <div className='globalIcon'>
           <img src={props.covidIcon} className='covidIcon' alt='Covid Icon'/>
         </div>

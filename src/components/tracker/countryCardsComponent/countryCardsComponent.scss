@@ -2,7 +2,7 @@
 
 .cardAtom {
     width: 45%;
-    height: 70px;
+    height: 85px;
     position:relative;
     overflow: hidden;
     border-radius:5px;
@@ -10,13 +10,17 @@
 }
 
 .imgStyle {
-    width: 75px;
-    height:75px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    margin-top: 65px;
-    margin-left: 50%;
+    margin-top: -60px;
+    margin-left: 45%;
     opacity:0.1;
     transition: ease-in-out 0.2s;
+}
+
+.cardAtom p {
+    font-size: 20px;
 }
 
 .imgStyle:hover {

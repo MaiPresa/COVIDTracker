@@ -3,40 +3,47 @@
 
 
 .globalCard{
-    width: 45%;
+    
     height: 70px;
     margin: 2px;
     color: $mainBg;
     box-shadow: 0 0 2px grey;
+    @include flex($align:center, $justify:start, $wrap:nowrap, $direction: row, $gap:0);
 
-    .globalIcon{
+    .globalIcon{        
+        width:35px;
+        padding: 10px;
         @include flex();
-        width:10%;
-        position: absolute;
-        margin-left: 10px;
-        margin-top: 10px;
 
         .covidIcon{
-            width: 45px;
+            width: 35px;
         }
     }
 
     .globalData{
-        @include flex($direction:column);
+        @include flex($direction:column,$align:right);
 
         .globalDataTitle{
-            margin: 18px 0 -20px 40px ;
-            margin-top: 20px;
-            margin-bottom: -20px;
             font-size: 11px;
+            padding: 0;
+            margin:0;
         }
 
         .globalIdData{
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
+            padding: 0;
+            margin:0;
         }
-
-
     }
+}
+
+
+.fullWidth{
+    width: 91%;
+}
+
+.commonWidth{
+    width: 45%;
 }
 
