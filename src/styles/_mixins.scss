@@ -1,4 +1,4 @@
-@use "./variables" as var;
+@use "./variables" as *;
 
 // ---------- BUTTONS ----------
 
@@ -14,8 +14,9 @@
     border-radius: 4px !important;
     background-color: $bgColor !important;
     color: $color !important;
-    height: 40px !important;
+    height: 48px !important;
     padding: 0 4ch !important;
+    font-size: 12px;
 }
 
 // --------- FLEX -------

@@ -3,7 +3,7 @@ import "./Banner.scss";
 export const Banner = (props) => {
     return(
         <div className="landingBanner">
-            <div>
+            <div className={props.order}>
                 <h2>{props.title}</h2>
                 <p>{props.text}</p>
                 {props.children}

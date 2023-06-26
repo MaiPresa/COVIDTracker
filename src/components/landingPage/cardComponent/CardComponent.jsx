@@ -10,7 +10,7 @@ export default function CardComponent({icon, iconStyle, title, description}) {
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardContent>
-          <img src={icon} className={iconStyle}/>  
+          <img src={icon} className={iconStyle} alt='' />  
           <Typography gutterBottom variant="h5" component="div">
             {title}
           </Typography>
