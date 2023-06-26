@@ -19,7 +19,7 @@
 }
 
 .footerOptionsContainer{
-  @include flex($wrap:wrap); 
+  @include flex($justify:space-around, $wrap:wrap); 
 }
 
 .footerDivision{

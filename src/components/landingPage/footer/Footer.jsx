@@ -17,6 +17,7 @@ function Footer() {
             </p>
             <SocialButtonsComponent />
           </div>
+        
           <FooterComponent
             optionTitle="Quic Links"
             optionDetail1="Prevention"
@@ -49,7 +50,6 @@ function Footer() {
         <hr className="footerDivision" />
         <div className="copyrightFooter">
           <p>
-            {" "}
             <img src={copyright} /> Copyright 2023.All Rights Reserved
           </p>
           <p>
