@@ -1,23 +1,26 @@
 @import '../../../styles/mixins';
 
 .cardAtom {
-    width: 250px;
-    height: 100px;
+    width: 45%;
+    height: 85px;
     position:relative;
     overflow: hidden;
     border-radius:5px;
-    background-color: white;
-    
+    background-color: white; 
 }
 
 .imgStyle {
-    width: 150px;
-    height:150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    margin-top:-80px;
-    margin-left:140px;
+    margin-top: -60px;
+    margin-left: 45%;
     opacity:0.1;
     transition: ease-in-out 0.2s;
+}
+
+.cardAtom p {
+    font-size: 20px;
 }
 
 .imgStyle:hover {
@@ -43,7 +46,7 @@
 }
 
 .countryCardTitle {
-    font-size: 16px;
+    font-size: 12px;
     font-weight:600;
     color:#494949;
     margin:10px 8px;

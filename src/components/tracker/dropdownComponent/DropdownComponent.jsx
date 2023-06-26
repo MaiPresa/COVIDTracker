@@ -1,4 +1,3 @@
-
 import axios from 'axios'
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -10,47 +9,79 @@ import './dropdownComponent.scss'
 
 export function DropdownComponent(){
 
-    const cases = document.getElementById('cases')
+    const countryTotalCases = document.getElementById('countryTotalCases')
+    const countryDeaths = document.getElementById('countryDeaths');
+    const countryRecovered = document.getElementById('countryRecovered');
+    const countryActive = document.getElementById('countryActive');
+    const countryNewCases = document.getElementById('countryNewCases');
+    const countryNewDeaths = document.getElementById('countryNewDeaths');
+    const globalCases = document.getElementById('globalCases');
+    const globalRecovered = document.getElementById('globalRecovered');
+    const globalDeaths = document.getElementById('globalDeaths');
+    const globalNewDeaths = document.getElementById('globalNewDeaths');
 
-    const url = "https://disease.sh/v3/covid-19/countries"
-    
     const [country, setCountry] = React.useState('');
 
     const handleChange = (event) => {
         setCountry(event.target.value);
     };
 
-    axios.get(url)
-        .then(res => {
-                const countryList = res.data;
+    const request = (param) => {
+        const url = `https://disease.sh/v3/covid-19/${param}`;
 
-                countryList.forEach(element => {
-                    if(element.country === country){
-                        console.log(element)
-                        cases.innerHTML = element.cases
+        axios.get(url)
+            .then(res => {
+                    if(param === 'countries'){
+                        const countryList = res.data;
+                        countryList.forEach(element => {
+                            if(element.country === country){
+                                countryTotalCases.innerHTML = element.cases;
+                                countryDeaths.innerHTML = element.deaths;
+                                countryRecovered.innerHTML = element.recovered;
+                                countryActive.innerHTML = element.active;
+                                countryNewCases.innerHTML = element.todayCases;
+                                countryNewDeaths.innerHTML = element.todayDeaths;
+                            }
+                        });
+                    }else if(param=== 'all'){
+                        const all = res.data;
+                        globalCases.innerHTML = all.cases;
+                        globalRecovered.innerHTML = all.recovered;
+                        globalDeaths.innerHTML = all.deaths;
+                        globalNewDeaths.innerHTML = all.todayDeaths;
                     }
-                });
-            }
-        )
-        .catch(err => console.log(err))
+                    
+                }
+            )
+            .catch(err => console.log(err))
+        
+    }
+
+    request('countries');
+    request('all');
+
+    
+
+    
 
     return (
         <>
-        <Box sx={{ minWidth: 120,margin:10}}>
-        <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">Country</InputLabel>
-            <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={country}
-            label="country"
-            onChange={handleChange}
-            >
-            <MenuItem value={"Spain"}>Spain</MenuItem>
-            <MenuItem value={"USA"}>USA</MenuItem>
-            <MenuItem value={"Argentina"}>Argentina</MenuItem>
-            </Select>
-        </FormControl>
+        <Box className="dropdownSection">
+            <FormControl fullWidth >
+                <InputLabel id="demo-simple-select-label">Country</InputLabel>
+                <Select className='dropdown'
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={country}
+                label="country"
+                onChange={handleChange}
+                >
+                <MenuItem value={"Spain"}>Spain</MenuItem>
+                <MenuItem value={"USA"}>USA</MenuItem>
+                <MenuItem value={"Argentina"}>Argentina</MenuItem>
+                </Select>
+            </FormControl>
+            <p id="lastUpdate">Updated: June 27, 2023</p>
         </Box>
         </>
     );

@@ -5,7 +5,7 @@ import logo from "../../../assets/images/coronavirus.png";
 export function NavbarComponent() {
   return (
     <>
-      <navbar>
+      <nav>
         <img src={logo} alt="Covid Tracker logo." className="logo rotating" />
 
         <div id="buttonGroupTracker">
@@ -51,7 +51,7 @@ export function NavbarComponent() {
 
         </div>
         <NavButtonAtom href="/stats" id="infoButtonDiv" className="infoButton" invisible={true} />
-      </navbar>
+      </nav>
     </>
   );
 }
