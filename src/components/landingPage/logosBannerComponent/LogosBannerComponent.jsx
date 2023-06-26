@@ -1,10 +1,10 @@
 import './logosBannerStyle.scss'
 
-import logo2 from '../../assets/images/b-2.png'
-import logo3 from '../../assets/images/b-3.png'
-import logo4 from '../../assets/images/b-4.png'
-import logo5 from '../../assets/images/b-5.png'
-import logo6 from '../../assets/images/b-6.png'
+import logo2 from '../../../assets/images/b-2.png'
+import logo3 from '../../../assets/images/b-3.png'
+import logo4 from '../../../assets/images/b-4.png'
+import logo5 from '../../../assets/images/b-5.png'
+import logo6 from '../../../assets/images/b-6.png'
 
 
 const LogosBannerComponent = () => {
