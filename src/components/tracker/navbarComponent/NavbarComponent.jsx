@@ -1,12 +1,15 @@
 import "./navbarComponent.scss";
+import { Link } from "react-router-dom";
+
 import { NavButtonAtom } from "./NavButtonAtom";
 import logo from "../../../assets/images/coronavirus.png";
+
 
 export function NavbarComponent() {
   return (
     <>
-      <nav>
-        <img src={logo} alt="Covid Tracker logo." className="logo rotating" />
+      <nav className="trackerNav">
+        <Link to="/"><img src={logo} alt="Covid Tracker logo." className="logo rotating" /></Link>
 
         <div id="buttonGroupTracker">
           <NavButtonAtom
