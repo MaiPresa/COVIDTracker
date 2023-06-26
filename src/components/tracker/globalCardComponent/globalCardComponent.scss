@@ -11,12 +11,12 @@
     @include flex($align:center, $justify:start, $wrap:nowrap, $direction: row, $gap:0);
 
     .globalIcon{        
-        width:35px;
-        padding: 10px;
+        width:25px;
+        padding: 5px;
         @include flex();
 
         .covidIcon{
-            width: 35px;
+            width: 25px;
         }
     }
 
@@ -46,4 +46,5 @@
 .commonWidth{
     width: 45%;
 }
+
 
