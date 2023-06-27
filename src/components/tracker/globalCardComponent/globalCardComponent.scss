@@ -1,0 +1,50 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+
+.globalCard{
+    
+    height: 70px;
+    margin: 2px;
+    color: $mainBg;
+    box-shadow: 0 0 2px grey;
+    @include flex($align:center, $justify:start, $wrap:nowrap, $direction: row, $gap:0);
+
+    .globalIcon{        
+        width:25px;
+        padding: 5px;
+        @include flex();
+
+        .covidIcon{
+            width: 25px;
+        }
+    }
+
+    .globalData{
+        @include flex($direction:column,$align:right);
+
+        .globalDataTitle{
+            font-size: 11px;
+            padding: 0;
+            margin:0;
+        }
+
+        .globalIdData{
+            font-size: 16px;
+            font-weight: 700;
+            padding: 0;
+            margin:0;
+        }
+    }
+}
+
+
+.fullWidth{
+    width: 91%;
+}
+
+.commonWidth{
+    width: 45%;
+}
+
+

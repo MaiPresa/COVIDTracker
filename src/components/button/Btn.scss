@@ -1,0 +1,23 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as *;
+
+
+.btnPrimary {
+    @include roundBtn($bgColor: v.$primaryBtn);
+    font-size: 16px;
+}
+
+.btnSecondary {
+    border: 2px solid v.$primaryBtn !important;
+    @include roundBtn($bgColor: v.$secondaryBtn);
+    height: 48px !important;
+    font-size: 12px;
+}
+
+.btnSquarePrimary {
+    @include squareBtn($bgColor: #3639AE, $color: white);
+}
+
+.btnSquareSecondary {
+    @include squareBtn($bgColor: white, $color: black);
+}

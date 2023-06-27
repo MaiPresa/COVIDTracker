@@ -1,0 +1,13 @@
+@import '../../styles/mixins.scss';
+
+.socialButtonsBox {
+    @include flex();
+    gap: 10px;
+}
+
+.socialButtons {
+    background-color: #293F73;
+}
+.socialButtons:hover {
+    background-color: #3d548a;
+}

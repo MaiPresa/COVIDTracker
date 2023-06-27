@@ -1,0 +1,32 @@
+@import '../../../styles/mixins';
+
+.footerContainer{
+    width: 100vw;
+    background-color:#1b2a4e ;
+    color: #9a9fad;
+}
+
+.footerLogoContainer{
+  @include flex($direction:column, $align: flex-start);
+  margin-right: -20%;
+}
+
+.footerLogoText{
+    @include flex($direction:column);
+    font-size: 20px;
+    padding: 10px;
+    width: 43%;
+}
+
+.footerOptionsContainer{
+  @include flex($justify:space-around, $wrap:wrap); 
+}
+
+.footerDivision{
+    border: 0.1px solid #52618a;
+}
+
+.copyrightFooter{
+    @include flex($justify: space-between);
+    margin: 0 30px;
+}
