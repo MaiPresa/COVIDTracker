@@ -1,0 +1,53 @@
+@import '../../../styles/mixins';
+
+.loader-container {
+    @include flex();
+    height: 100%;
+}
+.totalGlobal{
+    @include flex($justify:space-between, $wrap: wrap);
+    background-color: #fff2f2;
+    color: #ff0000 ;
+    border-radius: 3px;
+
+        &:hover {
+        border: 2px solid #ff0000 ;
+        transform: scale(1.05);
+      }
+}
+
+.totalActive{
+    @include flex($justify:space-between,$wrap: wrap);
+    background-color: #fff9f1;
+    color: #ff6a07 ;
+    border-radius: 3px;
+
+        &:hover {
+        border: 2px solid #ff6a07 ;
+        transform: scale(1.05);
+       }
+}
+
+.totalRecovered{
+    @include flex($justify:space-between,$wrap: wrap);
+    background-color: #edffec;
+    color: #82c519 ;
+    border-radius: 3px;
+
+        &:hover {
+        border: 2px solid #82c519;
+        transform: scale(1.05);
+       }   
+}
+
+.totalDeaths {
+    @include flex($justify:space-between,$wrap: wrap);
+    background-color: #eefbff;
+    color: #3639AE;
+    border-radius: 3px;
+
+        &:hover {
+        border: 2px solid #3639AE;
+        transform: scale(1.05);
+       }
+}
