@@ -1,12 +1,13 @@
+import './sidebarTop10Component.scss'
 
 const SidebarTop10Atom = (props) => {
     return (
       <div className="top10CardContainer">
         <div className = "top10FlagName">
           <img src={props.top10Flag} className="flagStyle"alt="flag"></img>
-          <p className={props.top10CountryId}>USA</p>
+          <p className="top10CountryId">{props.country10Name}</p>
         </div>
-        <p className={props.top10DataId}>3344564</p>
+        <p className="top10DataId">{props.country10Data}</p>
       </div>
     );
 }

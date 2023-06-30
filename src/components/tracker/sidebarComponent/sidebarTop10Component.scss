@@ -2,7 +2,7 @@
 
 .sidebarTop10Container{
     @include flex($direction:column, $gap:6px);
-    width: 260px;
+    width: 100%;
     height: fit-content;
     
 }
@@ -34,13 +34,13 @@
     border-radius: 3px;
 }
 
-.top10Country {
+.top10CountryId {
     color:#192B65;
     font-size: 12px;
     font-weight: 400;
 }
 
-.top10Data {
+.top10DataId {
     color: #3C317C;
     font-weight: bold;
     font-size: 14px;
