@@ -20,6 +20,7 @@ export function DropdownComponent(){
     const globalDeaths = document.getElementById('globalDeaths');
     const globalNewDeaths = document.getElementById('globalNewDeaths');
 
+    
     const [country, setCountry] = React.useState('');
 
     const handleChange = (event) => {

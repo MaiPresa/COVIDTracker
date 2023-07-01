@@ -1,4 +1,7 @@
+@import '../../../styles/mixins';
+
 .dropdownSection{
+    @include flex($wrap:wrap,$direction:row);
     width:92%;
     padding: 4% 4% 0 4%;
     border: none;
@@ -6,6 +9,7 @@
     .dropdown {
         background-color: white;
         border: none;
+        width: 100%;
     }
 
     #lastUpdate{
@@ -15,5 +19,6 @@
         font-weight: 600;
         padding: 0;
         margin: 3%;
+        width: 100%;
     }
 }
