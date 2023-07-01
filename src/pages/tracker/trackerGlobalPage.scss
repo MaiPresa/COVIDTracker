@@ -2,77 +2,16 @@
 
 #trackerGlobalPage {
     @include flex($align:center, $justify:start);
-    background-color: #F4F6FA;
-    
-
-    .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
-        color: black;
-    }
-
-    #global {
-        @include flex($align:flex-start, $justify:flex-start, $wrap:wrap, $direction: column, $gap:0);
-        padding-left: 48px;
-        width: 90vw;
-        hr {
-            border: none;
-            width: 90%;
-            background-color: rgb(223, 223, 223);
-            height: 1px;
-        }
-        #worldMap{
-            width: 92%;
-            padding: 4%;
-        }
-        
-        @media screen and (min-width:768px){
-            padding-left: 100px;
-            width: 40vw;
-
-
-        }
-        
-        @media screen and (min-width:1024px){
-            @include flex($align:flex-start, $justify:flex-start, $wrap:wrap, $direction: row, $gap:0);
-            width: 70vw;
-            .dropdownSection{
-
-                @include flex($wrap:wrap,$direction:row,$justify:space-between);
-
-                .MuiFormControl-root{
-                    width:30%
-                }
-                #lastUpdate{
-                    width:20%
-                }
-            }
-            .countryCardsContainer{
-                width: 45%;
-                padding: 20px 0 20px 3%;
-            }
-            #worldMap{
-                width: 47%;
-                padding: 20px 0;
-            }
-            
-            .globalCardContainer{
-                @include flex($wrap:wrap);
-                width: 100%;
-                padding: 0; margin: 0;
-
-                .fullWidth{
-                    width: 15%;
-                }
-
-                .commonWidth{
-                    width: 15%;
-                }
-            }
-
-            
-            
-        }
-    }
-
-    
-
 }
+
+.trackerOutlet {
+    margin-left: 49px;
+    background-color: #F4F6FA;
+    min-height: 100vh;
+    height: 100%;
+
+    @media screen and (min-width:768px){
+        margin-left: 419px;
+    }
+}
+
