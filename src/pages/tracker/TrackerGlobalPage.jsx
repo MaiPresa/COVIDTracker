@@ -1,30 +1,40 @@
-import {NavbarComponent} from '../../components/tracker/navbarComponent/NavbarComponent';
-import {DropdownComponent} from '../../components/tracker/dropdownComponent/DropdownComponent';
-import CountryCardsComponent from '../../components/tracker/countryCardsComponent/CountryCardsComponent';
-import GlobalCardContainer from '../../components/tracker/globalCardContainer/GlobalCardContainer'
-
-
-
 import './trackerGlobalPage.scss';
 
-import dummyMap from './../../assets/images/dummy-map.jpg';
+import { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
+import {NavbarComponent} from '../../components/tracker/navbarComponent/NavbarComponent';
+import {SidebarContainer} from "../../components/tracker/sidebarContainer/SidebarContainer";
+
 
 export function TrackerGlobalPage(){
+    const [width, setWidth] = useState(0)
+    
+    useEffect(() => {
+        function handleResize() {
+        setWidth(window.innerWidth)
+        }
+        
+        window.addEventListener("resize", handleResize)
+        
+        handleResize()
+        
+        return ()  => { 
+        window.removeEventListener("resize", handleResize)
+        }
+    }, [setWidth])
     return(
         <>
             <div id="trackerGlobalPage">
 
                 <NavbarComponent />
-
-                <div id="global">
-                    <DropdownComponent />
-                    <hr />
-                    <CountryCardsComponent />
-                    <img src={dummyMap} alt="Mapa del Mundo" id="worldMap" />
-                    <GlobalCardContainer />
-                </div>
+                {width >= 768 && <SidebarContainer/>}
 
             </div>
+
+            <main className='trackerOutlet'>
+                <Outlet/>
+            </main>
         </>
     )
 }

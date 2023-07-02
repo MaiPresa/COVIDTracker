@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { LandingPage } from "../pages/landingPage/LandingPage";
 import { TrackerGlobalPage } from "../pages/tracker/TrackerGlobalPage";
-
+import { FirstViewOutlet } from "../pages/tracker/firstViewOutlet/FirstViewOutlet";
 
 
 export const Router = () => {
@@ -10,7 +10,9 @@ export const Router = () => {
        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<LandingPage/>} ></Route>
-                <Route path="/tracker" element={<TrackerGlobalPage/>}></Route>
+                <Route path="/tracker" element={<TrackerGlobalPage/>}>
+                    <Route path="/tracker/" element={<FirstViewOutlet/>}></Route>
+                </Route>
             </Routes>
        </BrowserRouter>
     )
