@@ -8,7 +8,7 @@ const SidebarTop10Component = () => {
   const url ='https://disease.sh/v3/covid-19/countries?sort=cases';
   let topTen = APIservice(url);
 
-  if(topTen){topTen = topTen.slice(0,10)}
+    if(topTen){topTen = topTen.slice(0,10)}
   console.log(topTen)
 
   
