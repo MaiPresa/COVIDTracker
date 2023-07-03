@@ -1,6 +1,6 @@
 import "./SidebarContainer.scss";
 
-import SidebarGlobalContainer from "../globalCardContainer/GlobalCardContainer";
+import SidebarGlobalContainer from "../sidebarGlobalContainer/SidebarGlobalContainer";
 import SidebarTop10Component from "../sidebarComponent/SidebarTop10Component";
 
 
