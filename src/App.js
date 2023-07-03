@@ -1,12 +1,12 @@
 import "./App.css";
-import { Router } from './config/Router';
+import GraphComponent from "./components/tracker/graphComponent/GraphComponent";
 
 
 
 function App() {
   return (
     <div className="App">
-      <Router/> 
+      <GraphComponent/> 
 
    
     </div>
