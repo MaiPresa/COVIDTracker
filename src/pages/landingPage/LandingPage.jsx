@@ -1,10 +1,12 @@
 import "./LandingPage.scss";
 
 import {NavBar} from "../../components/landingPage/navBar/NavBar";
-import { Btn } from "../../components/button/Btn";
+import { Btn } from "../../components/landingPage/button/Btn";
 import { Banner } from "../../components/landingPage/banner/Banner";
+import FixedButtonsComponent from "../../components/landingPage/fixedButtonsComponent/FixedButtonsComponent";
 import LogosBannerComponent from "../../components/landingPage/logosBannerComponent/LogosBannerComponent";
 import CardComponentContainer from "../../components/landingPage/CardComponentContainer/CardComponentContainer";
+import Footer from "../../components/landingPage/footer/Footer";
 
 import bannerImage from "../../assets/images/phones.png";
 import secondBannerImage from "../../assets/images/mobiles.png";
@@ -24,6 +26,7 @@ export const LandingPage = () => {
                     image={bannerImage}>
                     <Btn btnType="btnSecondary">HOW TO PROTECT</Btn>
                 </Banner>
+                <FixedButtonsComponent/>
             </header>
 
             <section className="logosSection">
@@ -48,6 +51,7 @@ export const LandingPage = () => {
                     <Btn btnType="btnSquarePrimary">DOWNLOAD NOW</Btn>
                 </Banner>
             </section>
+            <Footer/>
         </>
 
     )
