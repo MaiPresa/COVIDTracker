@@ -1,10 +1,10 @@
 import FixedButtonAtom from "../fixedButtonsComponent/FixedButtonAtom";
 import "./socialButtonsComponent.scss"
 import "../fixedButtonsComponent/fixedButtonsComponent.scss"
-import facebook from '../../assets/icons/facebook.png'
-import twitter from '../../assets/icons/twitter.png'
-import linkedin from '../../assets/icons/linkedin.png'
-import youtube from '../../assets/icons/social.png'
+import facebook from '../../../assets/icons/facebook.png'
+import twitter from '../../../assets/icons/twitter.png'
+import linkedin from '../../../assets/icons/linkedin.png'
+import youtube from '../../../assets/icons/social.png'
 
 export default function SocialButtonsComponent(){
     return(

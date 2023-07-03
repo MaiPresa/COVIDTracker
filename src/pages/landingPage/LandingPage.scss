@@ -6,9 +6,18 @@
     padding-bottom: 48px;
 }
 
+.fixedButtonsBox {
+    display: none !important;
+}
+
 .logosSection {
     height: 0;
     @include flex();
+}
+
+.landingBanner {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .landingFirstSection {
@@ -36,4 +45,26 @@
 .landingSecondSection {
     background-color: v.$mainBg;
     padding-bottom: 148px;
+}
+
+
+
+.footerContainer {
+    width: initial !important;
+
+    .footerLogoContainer {
+        max-width: 428px;
+        width: 100%;
+        margin-right: 0 !important;
+    
+        .footerLogoText {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-width: 674px) {
+    .fixedButtonsBox {
+        display: flex !important;
+    }
 }

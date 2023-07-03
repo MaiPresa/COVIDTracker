@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Link } from "react-router-dom";
 
 import landingLogo from "../../../assets/images/logo.png";
-import { Btn } from "../../button/Btn";
+import { Btn } from "../button/Btn";
 import { NavButtons } from "../navBarButtons/NavButtons";
 
 import Menu from '@mui/material/Menu';

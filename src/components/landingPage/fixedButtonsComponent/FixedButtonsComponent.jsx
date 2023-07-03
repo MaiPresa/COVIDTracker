@@ -1,7 +1,7 @@
 import FixedButtonAtom from "./FixedButtonAtom"
-import share from '../../assets/icons/share.png'
-import support from '../../assets/icons/online-support.png'
-import cart from '../../assets/icons/shopping-cart.png'
+import share from '../../../assets/icons/share.png'
+import support from '../../../assets/icons/online-support.png'
+import cart from '../../../assets/icons/shopping-cart.png'
 import './fixedButtonsComponent.scss'
 
 export default function FixedButtonsComponent(){

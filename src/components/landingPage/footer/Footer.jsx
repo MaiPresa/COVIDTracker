@@ -1,7 +1,7 @@
 import "./footer.scss";
 import FooterComponent from "../footerComponent/FooterComponent";
 import logoBlanco from "../../../assets/images/logo-white.png";
-import SocialButtonsComponent from "../../socialButtonsComponent/SocialButtonsComponent";
+import SocialButtonsComponent from "../socialButtonsComponent/SocialButtonsComponent";
 import copyright from "../../../assets/icons/copyright.png";
 
 function Footer() {
