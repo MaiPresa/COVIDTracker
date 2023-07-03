@@ -18,11 +18,22 @@
 }
 
 .tab:hover{
-    background-color: $primaryBtn;
-    color: white;
+    animation: btnHover 0.2s linear;
+    animation-fill-mode: forwards;
 }
 
 #selected{
     background-color: $primaryBtn;
     color: white;
+}
+
+@keyframes btnHover{
+    0%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: $primaryBtn;
+        color: white;
+    }
 }

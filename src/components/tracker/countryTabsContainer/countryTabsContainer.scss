@@ -1,5 +1,6 @@
 @import '../../../styles/mixins';
 
 #tabsContainer{
+    padding: 2% 5%;
     @include flex($gap:15px,$justify:start,$wrap:wrap)
 }
