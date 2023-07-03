@@ -1,0 +1,39 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.tab{
+    background-color: white;
+    width: fit-content;
+    padding: 0 20px;
+    @include flex($gap:10px);
+    font-weight: 500;
+    border-radius: 5px;
+
+    .flagCircle{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+}
+
+.tab:hover{
+    animation: btnHover 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+#selected{
+    background-color: $primaryBtn;
+    color: white;
+}
+
+@keyframes btnHover{
+    0%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: $primaryBtn;
+        color: white;
+    }
+}

@@ -13,7 +13,7 @@ export function NavbarComponent() {
 
         <div id="buttonGroupTracker">
           <NavButtonAtom
-            href="/stats"
+            href="/tracker"
             className="navbarTrackerButton statsButton"
             linkClass="buttonLink"
           />
@@ -27,7 +27,7 @@ export function NavbarComponent() {
             invisible={true}
           />
           <NavButtonAtom
-            href="/stats"
+            href="/tracker/tabs"
             className="navbarTrackerButton folderButton"
             invisible={true}
           />
