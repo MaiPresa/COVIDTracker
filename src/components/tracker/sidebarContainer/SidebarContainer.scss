@@ -1,0 +1,33 @@
+@use "../../../styles/variables" as v;
+
+.SidebarContainer {
+    width: 280px;
+    height: 100%;
+    padding: 0 24px 0px 24px;
+    background-color: white;
+    position: fixed;
+    top:0;
+    left: 101px;
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    .sidebarGlobalCard {
+        width: auto;
+    }
+
+    .sidebarSecondTitle {
+        font-weight: bold;
+        color: v.$gradientBottom;
+    }
+
+    .sidebarTop10Container {
+        margin-bottom: 64px;
+    }
+
+}
+
+.SidebarContainer::-webkit-scrollbar {
+    display: none;
+  }
